@@ -224,7 +224,7 @@ for key, item in pairs(PaneItems) do
 end
 
 -- chart difficulty meter
-af[#af+1] = LoadFont("_wendy small")..{
+af[#af+1] = LoadFont("_roboto condensed Bold 48px")..{
 	Name="DifficultyMeter",
 	InitCommand=function(self) self:horizalign(right):diffuse(Color.Black):xy(_screen.w/4 - 10, _screen.h/2 - 65):queuecommand("Set") end,
 	SetCommand=function(self)

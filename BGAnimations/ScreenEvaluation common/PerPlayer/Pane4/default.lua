@@ -57,7 +57,7 @@ local pane = Def.ActorFrame{
 
 -- "Early" text
 pane[#pane+1] = Def.BitmapText{
-	Font="_wendy small",
+	Font="_roboto condensed Bold 48px",
 	Text=ScreenString("Early"),
 	InitCommand=function(self)
 		self:addx(10):addy(-125)
@@ -68,7 +68,7 @@ pane[#pane+1] = Def.BitmapText{
 
 -- "Late" text
 pane[#pane+1] = Def.BitmapText{
-	Font="_wendy small",
+	Font="_roboto condensed Bold 48px",
 	Text=ScreenString("Late"),
 	InitCommand=function(self)
 		self:addx(pane_width-10):addy(-125)

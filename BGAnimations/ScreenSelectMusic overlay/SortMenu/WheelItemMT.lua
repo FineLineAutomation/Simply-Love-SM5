@@ -28,7 +28,7 @@ return {
 
 			-- bottom text
 			af[#af+1] = Def.BitmapText{
-				Font="_wendy small",
+				Font="_roboto condensed Bold 48px",
 				InitCommand=function(subself)
 					self.bottom_text = subself
 					subself:zoom(0.85):y(10):diffusealpha(0):maxwidth(405)

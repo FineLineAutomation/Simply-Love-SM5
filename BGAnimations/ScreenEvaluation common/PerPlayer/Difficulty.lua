@@ -41,7 +41,7 @@ return Def.ActorFrame{
 	},
 
 	-- numerical difficulty meter
-	LoadFont("_wendy small")..{
+	LoadFont("_roboto condensed Bold 48px")..{
 		InitCommand=function(self)
 			self:diffuse(Color.Black):zoom( 0.4 )
 			self:y( _screen.cy-71 )

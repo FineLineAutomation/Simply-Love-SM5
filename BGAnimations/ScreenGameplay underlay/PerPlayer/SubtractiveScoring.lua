@@ -29,7 +29,7 @@ local judgment_count = 0
 local tns
 local hns
 
-return LoadFont("_wendy small")..{
+return LoadFont("_roboto condensed Bold 48px")..{
 
 	InitCommand=function(self)
 		self:diffuse(color("#ff55cc"))

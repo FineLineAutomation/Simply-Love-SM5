@@ -60,7 +60,7 @@ for i,player in ipairs({PLAYER_1, PLAYER_2}) do
 		end
 	}
 
-	af[#af+1] = LoadFont("_wendy small")..{
+	af[#af+1] = LoadFont("_roboto condensed Bold 48px")..{
 		Text=("%s %i"):format(THEME:GetString("ScreenTestInput", "Player"), PlayerNumber:Reverse()[player]+1),
 		InitCommand=function(self)
 			self:halign(PlayerNumber:Reverse()[OtherPlayer[player]])

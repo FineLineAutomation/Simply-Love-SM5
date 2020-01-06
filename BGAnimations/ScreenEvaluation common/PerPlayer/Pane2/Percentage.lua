@@ -22,7 +22,7 @@ return Def.ActorFrame{
 		end
 	},
 
-	LoadFont("_wendy white")..{
+	LoadFont("_roboto Bold 80px")..{
 		Text=percent,
 		Name="Percent",
 		InitCommand=function(self) self:horizalign(right):zoom(0.25):xy( 30, -2) end,

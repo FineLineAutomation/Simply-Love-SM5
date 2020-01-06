@@ -50,14 +50,14 @@ if EarnedMachineRecord or EarnedPersonalRecord then
 	}
 
 	if HighScoreIndex.Machine+1 > 0 then
-		t[#t+1] = LoadFont("_wendy small")..{
+		t[#t+1] = LoadFont("_roboto condensed Bold 48px")..{
 			Text=string.format("Machine Record %i", HighScoreIndex.Machine+1),
 			InitCommand=function(self) self:xy(-110,-18):diffuse(PlayerColor(player)) end,
 		}
 	end
 
 	if HighScoreIndex.Personal+1 > 0 then
-		t[#t+1] = LoadFont("_wendy small")..{
+		t[#t+1] = LoadFont("_roboto condensed Bold 48px")..{
 			Text=string.format("Personal Record %i", HighScoreIndex.Personal+1),
 			InitCommand=function(self) self:xy(-110,24):diffuse(PlayerColor(player)) end,
 		}

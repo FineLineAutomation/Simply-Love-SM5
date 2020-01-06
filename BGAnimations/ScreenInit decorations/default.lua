@@ -12,25 +12,25 @@ af[#af+1] = Def.Quad{
 for i=1,7 do
 	af[#af+1] = Def.ActorFrame {
 		InitCommand=function(self) self:Center() end,
-		OnCommand=function(self) self:sleep(3):queuecommand("Hide") end,
+		OnCommand=function(self) self:sleep(5):queuecommand("Hide") end,
 		HideCommand=function(self) self:visible(false) end,
 
 		LoadActor("white_logo.png")..{
 			InitCommand=function(self) self:zoom(0.1):diffuse(GetHexColor(slc-i-3)):diffusealpha(0):x((i-4)*50) end,
-			OnCommand=function(self) self:sleep(i*0.1 + 0.2):linear(0.75):diffusealpha(1):linear(0.75):diffusealpha(0) end
+			OnCommand=function(self) self:sleep(i*0.4 + 0.2):linear(0.75):diffusealpha(1):linear(0.75):diffusealpha(0) end
 		},
 		LoadActor("highlight.png")..{
 			InitCommand=function(self) self:zoom(0.1):diffusealpha(0):x((i-4)*50) end,
-			OnCommand=function(self) self:sleep(i*0.1 + 0.2):linear(0.75):diffusealpha(0.75):linear(0.75):diffusealpha(0) end
+			OnCommand=function(self) self:sleep(i*0.4 + 0.2):linear(0.75):diffusealpha(0.75):linear(0.75):diffusealpha(0) end
 		}
 	}
 end
 
-af[#af+1] = LoadFont("Common Normal")..{
-	Text=ScreenString("ThemeDesign"),
-	InitCommand=function(self) self:diffuse(GetHexColor(slc)):diffusealpha(0):Center() end,
-	OnCommand=function(self) self:sleep(3):linear(0.25):diffusealpha(1) end,
-	OffCommand=function(self) self:linear(0.25):diffusealpha(0) end,
-}
+--af[#af+1] = LoadFont("Common Normal")..{
+--	Text=ScreenString("ThemeDesign"),
+--	InitCommand=function(self) self:diffuse(GetHexColor(slc)):diffusealpha(0):Center() end,
+--	OnCommand=function(self) self:sleep(3):linear(0.25):diffusealpha(1) end,
+--	OffCommand=function(self) self:linear(0.25):diffusealpha(0) end,
+--}
 
 return af

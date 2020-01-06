@@ -98,12 +98,12 @@ local af = Def.ActorFrame{
 
 
 -- I'm not crazy about special-casing Wendy to use
--- _wendy small for the Measure/Rest counter, but
+-- _roboto condensed Bold 48px for the Measure/Rest counter, but
 -- I'm hesitant to visually alter a feature that
 -- so many players have become so reliant on...
 local font = mods.ComboFont
 if font == "Wendy" or font == "Wendy (Cursed)" then
-	font = "_wendy small"
+	font = "_roboto condensed Bold 48px"
 else
 	font = "_Combo Fonts/" .. font .. "/"
 end

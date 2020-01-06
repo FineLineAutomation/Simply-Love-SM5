@@ -52,7 +52,7 @@ local t = Def.ActorFrame{
 
 	LoadActor( THEME:GetPathB("", "Triangles.lua") ),
 
-	LoadFont("_wendy small")..{
+	LoadFont("_roboto condensed Bold 48px")..{
 		Name="PageNumber",
 		Text=("%s %i/%i"):format(page_text, page, pages),
 		InitCommand=function(self) self:diffusealpha(0):zoom(WideScale(0.5,0.6)):xy(_screen.cx, 15) end,

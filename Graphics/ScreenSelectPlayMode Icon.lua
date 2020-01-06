@@ -3,7 +3,7 @@ local index = gc:GetIndex()
 local text = gc:GetName()
 
 -- text description of each mode ("Casual", "ITG", "FA+", "StomperZ")
-return LoadFont("_wendy small")..{
+return LoadFont("_roboto condensed Bold 48px")..{
 	Name="ModeName"..index,
 	Text=ScreenString(text),
 

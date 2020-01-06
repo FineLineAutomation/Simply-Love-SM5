@@ -18,7 +18,7 @@ local af = Def.ActorFrame{
 -- header text
 af[#af+1] = Def.BitmapText{
 	Name="PageNumber",
-	Font="_wendy small",
+	Font="_roboto condensed Bold 48px",
 	InitCommand=function(self) self:diffusealpha(0):zoom( WideScale(0.5,0.6) ):xy( _screen.cx, 15 ) end,
 	OnCommand=function(self) self:sleep(0.1):decelerate(0.33):diffusealpha(1):playcommand("Update",{page=1}) end,
 	OffCommand=function(self) self:accelerate(0.33):diffusealpha(0) end,

@@ -6,7 +6,7 @@ return Def.ActorFrame{
 		OffCommand=function(self) self:linear(0.3):cropbottom(-0.5):diffusealpha(1) end
 	},
 
-	LoadFont("_wendy small")..{
+	LoadFont("_roboto condensed Bold 48px")..{
 		Text=THEME:GetString("ScreenSelectMusic", "Press Start for Options"),
 		InitCommand=function(self) self:visible(false):Center():zoom(0.75) end,
 		ShowPressStartForOptionsCommand=function(self) self:visible(true) end,

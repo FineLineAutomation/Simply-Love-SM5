@@ -181,7 +181,7 @@ local af = Def.ActorFrame{
 		end
 	 end,
 
-	LoadFont("_wendy small")..{
+	LoadFont("_roboto condensed Bold 48px")..{
 		Text=THEME:GetString("ScreenSelectStyle", choiceName:gsub("^%l", string.upper)),
 		InitCommand=function(self)
 			self:shadowlength(1):y(37):zoom(0.5)

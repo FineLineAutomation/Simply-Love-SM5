@@ -39,7 +39,7 @@ local t = Def.ActorFrame{
 	LoadActor( THEME:GetPathG("", "_header.lua") ),
 
 	Def.BitmapText{
-		Font=PREFSMAN:GetPreference("EventMode") and "_wendy monospace numbers" or "_wendy small",
+		Font=PREFSMAN:GetPreference("EventMode") and "_roboto Bold 80px" or "_roboto condensed Bold 48px",
 		Name="Stage Number",
 		InitCommand=function(self)
 			bmt_actor = self
@@ -58,7 +58,7 @@ local t = Def.ActorFrame{
 		end,
 	},
 
-	LoadFont("_wendy small")..{
+	LoadFont("_roboto condensed Bold 48px")..{
 		Name="GameModeText",
 		InitCommand=function(self)
 			self:diffusealpha(0):zoom( WideScale(0.5,0.6)):xy(_screen.w-70, 15):halign(1)

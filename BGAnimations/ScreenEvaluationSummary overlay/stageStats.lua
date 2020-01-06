@@ -136,7 +136,7 @@ for player in ivalues(Players) do
 	}
 
 	--percent score
-	PlayerStatsAF[#PlayerStatsAF+1] = LoadFont("_wendy small")..{
+	PlayerStatsAF[#PlayerStatsAF+1] = LoadFont("_roboto condensed Bold 48px")..{
 		InitCommand=function(self) self:zoom(0.5):horizalign(align1):x(col1x):y(-24) end,
 		DrawStageCommand=function(self)
 			if playerStats and score then
@@ -175,7 +175,7 @@ for player in ivalues(Players) do
 	end
 
 	-- difficulty meter
-	PlayerStatsAF[#PlayerStatsAF+1] = LoadFont("_wendy small")..{
+	PlayerStatsAF[#PlayerStatsAF+1] = LoadFont("_roboto condensed Bold 48px")..{
 		InitCommand=function(self) self:zoom(0.4):horizalign(align1):x(col1x):y(4) end,
 		DrawStageCommand=function(self)
 			if playerStats and difficultyMeter then
@@ -201,7 +201,7 @@ for player in ivalues(Players) do
 	-- numbers
 	for i=1,#TNSTypes do
 
-		PlayerStatsAF[#PlayerStatsAF+1] = LoadFont("_wendy small")..{
+		PlayerStatsAF[#PlayerStatsAF+1] = LoadFont("_roboto condensed Bold 48px")..{
 			InitCommand=function(self)
 				self:zoom(0.28):horizalign(align2):x(col2x):y(i*13 - 50)
 					:diffuse( SL.JudgmentColors[SL.Global.GameMode][i] )

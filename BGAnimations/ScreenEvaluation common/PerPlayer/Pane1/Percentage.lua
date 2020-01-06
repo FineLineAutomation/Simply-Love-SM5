@@ -21,7 +21,7 @@ return Def.ActorFrame{
 		end
 	},
 
-	LoadFont("_wendy white")..{
+	LoadFont("_roboto Bold 80px")..{
 		Name="Percent",
 		Text=percent,
 		InitCommand=function(self)

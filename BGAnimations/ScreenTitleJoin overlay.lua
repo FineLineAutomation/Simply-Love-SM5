@@ -1,4 +1,4 @@
-return LoadFont("_wendy small")..{
+return LoadFont("_roboto condensed Bold 48px")..{
 	InitCommand=function(self)
 		self:xy(_screen.cx,_screen.h-80):zoom(0.7):shadowlength(0.75)
 		self:visible(false):queuecommand("Refresh")

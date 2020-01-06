@@ -113,7 +113,7 @@ for RowNumber=1,num_rows do
 		end
 	}
 
-	Grid[#Grid+1] = LoadFont("_wendy small")..{
+	Grid[#Grid+1] = LoadFont("_roboto condensed Bold 48px")..{
 		Name="Meter_"..RowNumber,
 		InitCommand=function(self)
 			local height = self:GetParent():GetChild("Blocks_"..RowNumber):GetHeight()

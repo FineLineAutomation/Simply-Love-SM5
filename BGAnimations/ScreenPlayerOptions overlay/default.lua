@@ -250,7 +250,7 @@ for player in ivalues(Players) do
 	}
 
 	-- the large block text at the top that shows each player their current scroll speed
-	t[#t+1] = LoadFont("_wendy small")..{
+	t[#t+1] = LoadFont("_roboto condensed Bold 48px")..{
 		Name=pn.."SpeedModHelper",
 		Text="",
 		InitCommand=function(self)

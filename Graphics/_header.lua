@@ -21,7 +21,7 @@ return Def.ActorFrame{
 		end,
 	},
 
-	LoadFont("_wendy small")..{
+	LoadFont("_roboto condensed Bold 48px")..{
 		Name="HeaderText",
 		Text=ScreenString("HeaderText"),
 		InitCommand=function(self) self:diffusealpha(0):zoom(WideScale(0.5,0.6)):horizalign(left):xy(10, 15) end,
